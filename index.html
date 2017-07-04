@@ -1,12 +1,17 @@
 ---
 layout: default
+title: Think Tanks
 ---
 
-<h2>Tech Predictions</h2>
-<p>These are the places I'm currently pulling from tech blogs.</p>
-<ul>
-  <li><a href="techcrunch/">Techcrunch</a></li>
-  <li><a href="readwrite/">ReadWrite</a></li>
-  <li><a href="venturebeat/">VentureBeat</a></li>
+{% for post in site.posts | limit: 1 %}
+
+<p>{{ post.title }}</p>
+<p>{{ post.description }}</p>
+
+{% endfor %}
+
+<ul class="pagination" style="text-align: center;">
+  <li style="text-align:left;"><a href="/blog/page{{paginator.previous_page}}" class="button disabled"><< Prev</a></li>
+  <li style="width: 75%"><span></span></li>
+  <li style="text-align:right;"><a href="/blog/page{{paginator.next_page}}" class="button">Next >></a></li>
 </ul>
-<p>I will be adding more to this page when I have it available.</p>
