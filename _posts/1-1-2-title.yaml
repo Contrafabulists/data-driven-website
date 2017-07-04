@@ -1,0 +1,10 @@
+- slug: create-spreadsheet
+  title: Create Spreadsheet
+  description: >-
+    Open Google Docs (not drive) and create a new spreadsheet. Add all your
+    columns, and data. Freeze first row, and set aside as the names of your
+    columns ?? should this be second slide?
+  url: ''
+  image: 'https://s3.amazonaws.com/kinlane-productions/lessons/create-spreadsheet.png'
+  video: ''
+  audio: ''
